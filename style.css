@@ -744,6 +744,7 @@ footer a {
     height: 200vh;
   }
   .partners {
+    width: auto;
     align-items: center;
   }
 
