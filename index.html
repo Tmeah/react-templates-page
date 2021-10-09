@@ -9,6 +9,7 @@
       src="https://kit.fontawesome.com/c8e4d183c2.js"
       crossorigin="anonymous"
     ></script>
+    <script src="index.js"></script>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -28,6 +29,50 @@
               <a href="#" class="nav__link nav__link--primary"> Sign Up</a>
             </li>
           </ul>
+          <button class="btn__menu" onclick="openMenu()">
+            <i class="fas fa-bars"></i>
+          </button>
+          <div class="menu__backdrop">
+            <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+              <i class="fas fa-times"></i>
+            </button>
+            <ul class="menu__links">
+              <li class="menu__list">
+                <a href="#" class="menu__link" onclick="closeMenu()">Home</a>
+              </li>
+              <li class="menu__list">
+                <a href="#features" class="menu__link" onclick="closeMenu()"
+                  >About</a
+                >
+              </li>
+              <li class="menu__list">
+                <a href="#" class="menu__link no__cursor" onclick="closeMenu()"
+                  >Blog</a
+                >
+              </li>
+              <li class="menu__list">
+                <a href="#" class="menu__link no__cursor" onclick="closeMenu()"
+                  >Pricing</a
+                >
+              </li>
+            </li>
+            <li class="menu__list">
+              <a href="#" class="menu__link no__cursor" onclick="closeMenu()"
+                >Contact Us</a
+              >
+            </li>
+            <li class="menu__list">
+              <a href="#" class="menu__link no__cursor" onclick="closeMenu()"
+                >Log In</a
+              >
+            </li>
+            <li class="menu__list">
+              <a href="#" class="menu__link no__cursor" onclick="closeMenu()"
+                >Sign Up</a
+              >
+            </li>
+            </ul>
+          </div>
         </div>
       </nav>
       <header>
@@ -416,32 +461,205 @@
           <div class="row">
             <div class="features__description">
               <span class="green title">FAQS</span>
-              <h1>You Have <span class="green">Questions?</span></h1>
+              <h1>Any <span class="green">Questions?</span></h1>
               <p>
                 We have got answers to all of them. Lorem ipsum dolor sit amet,
                 consectetur adipiscing elit.
               </p>
             </div>
             <div class="questions">
-              <div class="question">
+              <div class="question" onclick="openMenu0()">
                 <div class="question__words">
                   <h2 class="question__title">
                     Are all the templates easily customisable?
-                    <i class="fas fa-chevron-up pointer"></i>
+                    <i class="fas fa-chevron-down pointer"></i>
                   </h2>
-                  <p1 class="question__answer">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Dolore saepe ipsam dignissimos mollitia perspiciatis
-                    asperiores at ipsa odio possimus omnis, quis magnam nihil
-                    quia laborum doloremque dicta esse corrupti quaerat.
-                  </p1>
+                  <div id="question__answer" class="question__answer">
+                    <p1>
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Dolore saepe ipsam dignissimos mollitia perspiciatis
+                      asperiores at ipsa odio possimus omnis, quis magnam nihil
+                      quia laborum doloremque dicta esse corrupti quaerat.
+                    </p1>
+                  </div>
+                </div>
+              </div>
+              <div class="question" onclick="openMenu1()">
+                <div class="question__words">
+                  <h2 class="question__title">
+                    How long do you usually support a standalone template for?
+                    <i class="fas fa-chevron-down pointer"></i>
+                  </h2>
+                  <div id="question__answer1" class="question__answer">
+                    <p1>
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Dolore saepe ipsam dignissimos mollitia perspiciatis
+                      asperiores at ipsa odio possimus omnis, quis magnam nihil
+                      quia laborum doloremque dicta esse corrupti quaerat.
+                    </p1>
+                  </div>
+                </div>
+              </div>
+              <div class="question" onclick="openMenu2()">
+                <div class="question__words">
+                  <h2 class="question__title">
+                    What kind of payment methods are accepted?
+                    <i class="fas fa-chevron-down pointer"></i>
+                  </h2>
+                  <div id="question__answer2" class="question__answer">
+                    <p1>
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Dolore saepe ipsam dignissimos mollitia perspiciatis
+                      asperiores at ipsa odio possimus omnis, quis magnam nihil
+                      quia laborum doloremque dicta esse corrupti quaerat.
+                    </p1>
+                  </div>
+                </div>
+              </div>
+              <div class="question" onclick="openMenu3()">
+                <div class="question__words">
+                  <h2 class="question__title">
+                    Is there a subscription service available to get the latest
+                    templates
+                    <i class="fas fa-chevron-down pointer"></i>
+                  </h2>
+                  <div id="question__answer3" class="question__answer">
+                    <p1>
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Dolore saepe ipsam dignissimos mollitia perspiciatis
+                      asperiores at ipsa odio possimus omnis, quis magnam nihil
+                      quia laborum doloremque dicta esse corrupti quaerat.
+                    </p1>
+                  </div>
+                </div>
+              </div>
+              <div class="question" onclick="openMenu4()">
+                <div class="question__words">
+                  <h2 class="question__title">
+                    Are the templates compatible with react?
+                    <i class="fas fa-chevron-down pointer"></i>
+                  </h2>
+                  <div id="question__answer4" class="question__answer">
+                    <p1>
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Dolore saepe ipsam dignissimos mollitia perspiciatis
+                      asperiores at ipsa odio possimus omnis, quis magnam nihil
+                      quia laborum doloremque dicta esse corrupti quaerat.
+                    </p1>
+                  </div>
+                </div>
+              </div>
+              <div class="question" onclick="openMenu5()">
+                <div class="question__words">
+                  <h2 class="question__title">
+                    Do you support Internet Explorer 11?
+                    <i class="fas fa-chevron-down pointer"></i>
+                  </h2>
+                  <div id="question__answer5" class="question__answer">
+                    <p1>
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Dolore saepe ipsam dignissimos mollitia perspiciatis
+                      asperiores at ipsa odio possimus omnis, quis magnam nihil
+                      quia laborum doloremque dicta esse corrupti quaerat.
+                    </p1>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <
+      <section id="contact">
+        <div class="container">
+          <div class="row">
+            <div class="contact__container">
+              <div class="contact__message">
+                <h2>
+                  Developers all over the world are happily using TMreact.
+                </h2>
+              </div>
+              <div class="contact__buttons">
+                <button>
+                  <a href="#" class="btns start__btn--contact">Get Started</a>
+                </button>
+                <button>
+                  <a class="btns contact__btn" href="#">Contact Us</a>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="links">
+            <div class="link__list">
+              <div class="link__title">MAIN</div>
+              <ul>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">Support</a></li>
+                <li><a href="#">About Us</a></li>
+              </ul>
+            </div>
+            <div class="link__list">
+              <span class="link__title">PRODUCT</span>
+              <ul>
+                <li><a href="#">Log In</a></li>
+                <li><a href="#">Personal</a></li>
+                <li><a href="#">Business</a></li>
+                <li><a href="#">Team</a></li>
+              </ul>
+            </div>
+            <div class="link__list">
+              <span class="link__title">PRESS</span>
+              <ul>
+                <li><a href="#">Logos</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Stories</a></li>
+                <li><a href="#">Office</a></li>
+              </ul>
+            </div>
+            <div class="link__list">
+              <span class="link__title">TEAM</span>
+              <ul>
+                <li><a href="#">Career</a></li>
+                <li><a href="#">Founders</a></li>
+                <li><a href="#">Culture</a></li>
+                <li><a href="#">Onboarding</a></li>
+              </ul>
+            </div>
+            <div class="link__list">
+              <span class="link__title">LEGAL</span>
+              <ul>
+                <li><a href="#">GDPR</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Disclaimer</a></li>
+              </ul>
+            </div>
+          </div>
+          <hr class="footer__line" />
+          <div class="footer__info">
+            <div class="footer__logo">
+              <figure>
+                <img src="logo.jpg" alt="" class="logo" />
+              </figure>
+              <span>TMReact</span>
+            </div>
+            <div class="footer__copy">
+              <span>&copy; TMreact Inc, All Rights Reserved.</span>
+            </div>
+            <div class="footer__socials">
+              <a href=""><i class="fab fa-facebook-square"></i></a>
+              <a href=""><i class="fab fa-twitter-square"></i></a>
+              <a href=""><i class="fab fa-youtube-square"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
