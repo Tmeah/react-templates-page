@@ -244,7 +244,11 @@ section {
 }
 
 .slide__description {
-  width: calc(100% - 20%);
+  width: calc(100% / 2);
+}
+
+.slide__image {
+  width: 900px;
 }
 
 .website__image {
