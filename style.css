@@ -755,6 +755,10 @@ footer a {
   #features {
     margin-top: 200px;
   }
+
+  #features h1 {
+    text-align: center;
+  }
   .feature__list,
   .feature__list--item {
     align-content: center;
