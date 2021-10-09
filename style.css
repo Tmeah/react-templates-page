@@ -741,9 +741,9 @@ footer a {
     align-items: center center;
     text-align: center;
     height: 200vh;
+    padding: 20px;
   }
   .partners {
-    width: auto;
     align-items: center;
   }
 
@@ -758,9 +758,7 @@ footer a {
   #features h1 {
     text-align: center;
   }
-  .header__container {
-    padding: auto;
-  }
+
   .feature__list,
   .feature__list--item {
     align-content: center;
