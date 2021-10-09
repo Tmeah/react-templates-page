@@ -736,7 +736,6 @@ footer a {
   }
 
   .header__container {
-    padding: 80px;
     display: flex;
     flex-direction: column;
     align-items: center center;
@@ -758,6 +757,9 @@ footer a {
 
   #features h1 {
     text-align: center;
+  }
+  .header__container {
+    padding: auto;
   }
   .feature__list,
   .feature__list--item {
