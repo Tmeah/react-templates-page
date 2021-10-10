@@ -85,9 +85,9 @@ form {
   max-width: 400px;
   display: flex;
   flex-direction: row;
-  border-radius: 12px;
+  border-radius: 240px;
   border: 1px solid rgba(128, 128, 128, 0.5);
-  padding: 2px;
+  padding: 10px;
 }
 
 form:hover {
@@ -103,9 +103,6 @@ input:focus {
   outline: none;
 }
 
-section {
-  min-height: 100vh;
-}
 .green {
   color: #3d9970;
 }
