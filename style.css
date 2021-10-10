@@ -804,10 +804,12 @@ footer a {
   }
 
   .contact__message {
+    padding: 8px;
     text-align: center;
     width: fit-content;
   }
   .contact__buttons {
+    flex-direction: column;
     width: auto;
   }
 
