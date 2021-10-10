@@ -71,6 +71,11 @@ button:hover {
   cursor: pointer;
   background-color: #3d9970;
 }
+.btn__menu:hover {
+  cursor: pointer;
+  background-color: #ffffff;
+  color: #3d9970;
+}
 
 button a {
   color: white;
