@@ -797,6 +797,10 @@ footer a {
     padding: 30px;
   }
 
+  .question__title {
+    font-size: 12px;
+  }
+
   .plan {
     width: 100%;
   }
