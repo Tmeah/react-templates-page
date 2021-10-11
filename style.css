@@ -885,3 +885,9 @@ footer a {
     align-items: center;
   }
 }
+
+@media (max-width: 1068px) {
+  .nav__links li:last-child {
+    display: none;
+  }
+}
