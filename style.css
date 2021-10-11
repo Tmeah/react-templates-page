@@ -94,6 +94,11 @@ form:hover {
   border: 1px solid #3d9970;
 }
 
+.form__btn {
+  padding: 10px;
+  border-radius: 300px;
+}
+
 input {
   flex-grow: 2;
   border: none;
@@ -657,6 +662,7 @@ footer a {
   max-width: 1400px;
   display: flex;
   flex-wrap: wrap;
+  margin: 0 auto;
 }
 
 .link__list ul {
